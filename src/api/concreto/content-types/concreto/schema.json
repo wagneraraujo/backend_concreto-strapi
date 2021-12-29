@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "concretos",
+  "info": {
+    "singularName": "concreto",
+    "pluralName": "concretos",
+    "displayName": "Concreto"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Razao_Social": {
+      "type": "string"
+    },
+    "Telefone": {
+      "type": "string"
+    },
+    "Endereco": {
+      "type": "string"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "criar_servicos",
+  "info": {
+    "singularName": "criar-servico",
+    "pluralName": "criar-servicos",
+    "displayName": "Criar_servico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Descricao": {
+      "type": "richtext"
+    },
+    "Inicio": {
+      "type": "datetime",
+      "default": "1969-12-31T11:00:00.000Z"
+    },
+    "Imagens": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "Status_servico": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "colaboradores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::colaboradore.colaboradore",
+      "mappedBy": "criar_servico"
+    },
+    "tipos_servicos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tipos-servico.tipos-servico",
+      "mappedBy": "criar_servico"
+    },
+    "empresa": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::empresa.empresa",
+      "inversedBy": "criar_servicos"
+    },
+    "Valor": {
+      "type": "decimal"
+    }
+  }
+}

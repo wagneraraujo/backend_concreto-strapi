@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "singularName": "empresa",
+    "pluralName": "empresas",
+    "displayName": "Empresas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome_Empresa": {
+      "type": "string",
+      "required": true
+    },
+    "Cnpj": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Endereco": {
+      "type": "string",
+      "required": true
+    },
+    "Nome_contato": {
+      "type": "string"
+    },
+    "criar_servicos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::criar-servico.criar-servico",
+      "mappedBy": "empresa"
+    },
+    "Telefone": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipos_servicos",
+  "info": {
+    "singularName": "tipos-servico",
+    "pluralName": "tipos-servicos",
+    "displayName": "Tipos_servicos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Descricao": {
+      "type": "richtext"
+    },
+    "criar_servico": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::criar-servico.criar-servico",
+      "inversedBy": "tipos_servicos"
+    }
+  }
+}
