@@ -36,12 +36,6 @@
       "default": false,
       "required": true
     },
-    "colaboradores": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::colaboradore.colaboradore",
-      "mappedBy": "criar_servico"
-    },
     "tipos_servicos": {
       "type": "relation",
       "relation": "oneToMany",
@@ -56,6 +50,11 @@
     },
     "Valor": {
       "type": "decimal"
+    },
+    "selecione_colaborador": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
     }
   }
 }
