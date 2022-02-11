@@ -67,7 +67,7 @@
       "type": "enumeration",
       "enum": [
         "colaborador",
-        "gerente"
+        "empresa"
       ],
       "default": "colaborador",
       "required": true
