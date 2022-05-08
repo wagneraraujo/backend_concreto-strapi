@@ -25,6 +25,21 @@
       "relation": "manyToOne",
       "target": "api::criar-servico.criar-servico",
       "inversedBy": "tipos_servicos"
+    },
+    "Preco": {
+      "type": "decimal",
+      "default": 0,
+      "required": false
+    },
+    "Nome_Icone": {
+      "type": "string",
+      "default": "file-cad-box"
+    },
+    "qtd": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "max": 1
     }
   }
 }

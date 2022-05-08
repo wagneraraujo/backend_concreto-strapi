@@ -19,8 +19,8 @@
       "type": "richtext"
     },
     "Inicio": {
-      "type": "datetime",
-      "default": "1969-12-31T11:00:00.000Z"
+      "type": "date",
+      "default": "2022-04-01"
     },
     "Imagens": {
       "type": "media",
@@ -55,6 +55,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "admin::user"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "criar_servicos"
     }
   }
 }

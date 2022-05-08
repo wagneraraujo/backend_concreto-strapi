@@ -71,6 +71,12 @@
       ],
       "default": "colaborador",
       "required": true
+    },
+    "criar_servicos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::criar-servico.criar-servico",
+      "mappedBy": "users"
     }
   }
 }

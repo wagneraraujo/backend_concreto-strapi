@@ -39,6 +39,11 @@
     },
     "Telefone": {
       "type": "string"
+    },
+    "adminempresa": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
