@@ -61,6 +61,15 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "criar_servicos"
+    },
+    "users_permissions_usersss": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "colssss"
+    },
+    "Info_adicionais": {
+      "type": "text"
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_infoadd_informacoes_adicionais",
+  "info": {
+    "displayName": "Informacoes_adicionais",
+    "icon": "check-circle"
+  },
+  "options": {},
+  "attributes": {
+    "Descreva": {
+      "type": "text"
+    }
+  }
+}

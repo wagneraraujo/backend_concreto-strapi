@@ -77,6 +77,12 @@
       "relation": "manyToMany",
       "target": "api::criar-servico.criar-servico",
       "mappedBy": "users"
+    },
+    "colssss": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::criar-servico.criar-servico",
+      "mappedBy": "users_permissions_usersss"
     }
   }
 }
