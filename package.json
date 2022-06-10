@@ -11,7 +11,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@offset-dev/strapi-calendar": "^0.0.4",
     "@strapi/plugin-i18n": "4.1.12",
     "@strapi/plugin-users-permissions": "4.1.12",
     "@strapi/strapi": "4.1.12",
