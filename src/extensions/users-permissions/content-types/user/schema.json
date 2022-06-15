@@ -74,15 +74,12 @@
     },
     "criar_servicos": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::criar-servico.criar-servico",
-      "mappedBy": "users"
+      "mappedBy": "Gerente_Empresa"
     },
-    "colssss": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::criar-servico.criar-servico",
-      "mappedBy": "users_permissions_usersss"
+    "Primeiro_Nome": {
+      "type": "string"
     }
   }
 }

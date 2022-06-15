@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colaboradores",
+  "info": {
+    "singularName": "colaborador",
+    "pluralName": "colaboradores",
+    "displayName": "Colaborador",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Nome": {
+      "type": "string",
+      "required": true
+    },
+    "Telefone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

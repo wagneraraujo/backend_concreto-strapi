@@ -31,11 +31,6 @@
         "videos"
       ]
     },
-    "Status_servico": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
     "tipos_servicos": {
       "type": "relation",
       "relation": "oneToMany",
@@ -51,25 +46,28 @@
     "Valor": {
       "type": "decimal"
     },
-    "selecione_colaborador": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "admin::user"
+    "Info_adicionais": {
+      "type": "text"
     },
-    "users": {
+    "Gerente_Empresa": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "criar_servicos"
     },
-    "users_permissions_usersss": {
+    "colaborador": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "colssss"
+      "relation": "oneToOne",
+      "target": "api::colaborador.colaborador"
     },
-    "Info_adicionais": {
-      "type": "text"
+    "Status_Servicos": {
+      "type": "enumeration",
+      "enum": [
+        "Aguardando",
+        "Iniciado",
+        "Finalizado"
+      ],
+      "default": "Aguardando"
     }
   }
 }
