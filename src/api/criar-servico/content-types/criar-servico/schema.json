@@ -68,6 +68,14 @@
         "Finalizado"
       ],
       "default": "Aguardando"
+    },
+    "Pagamento": {
+      "type": "enumeration",
+      "enum": [
+        "Aguardando",
+        "Pago"
+      ],
+      "default": "Aguardando"
     }
   }
 }
