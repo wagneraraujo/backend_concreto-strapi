@@ -25,20 +25,14 @@
       "type": "string",
       "required": true
     },
-    "Fente_CNH_RG": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": false
+    "Url_imagem_Perfil": {
+      "type": "string"
     },
-    "Verso_CNH_RG": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "Url_frente_RGCNH": {
+      "type": "string"
+    },
+    "Url_verso_RGCNH": {
+      "type": "string"
     }
   }
 }
