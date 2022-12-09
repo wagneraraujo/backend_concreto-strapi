@@ -76,6 +76,12 @@
         "Pago"
       ],
       "default": "Aguardando"
+    },
+    "colaboradors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::colaborador.colaborador",
+      "inversedBy": "Servicos_Relacionados"
     }
   }
 }
