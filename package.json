@@ -1,33 +1,33 @@
 {
-  "name": "concreto-backend",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
-  "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "devDependencies": {},
-  "dependencies": {
-    "@strapi/plugin-i18n": "4.5.2",
-    "@strapi/plugin-users-permissions": "4.5.2",
-    "@strapi/provider-upload-cloudinary": "^4.5.2",
-    "@strapi/strapi": "4.5.2",
-    "pg": "^8.7.3",
-    "sqlite3": "^5.1.1",
-    "strapi-plugin-import-export-entries": "^1.14.1"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "2c237bd8-4100-4018-b0a1-d1053dce112a"
-  },
-  "engines": {
-    "node": ">=14.x.x <=16.x.x",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+	"name": "concreto-backend",
+	"private": true,
+	"version": "0.1.0",
+	"description": "A Strapi application",
+	"scripts": {
+		"develop": "strapi develop",
+		"start": "strapi start",
+		"build": "strapi build",
+		"strapi": "strapi"
+	},
+	"devDependencies": {},
+	"dependencies": {
+		"@strapi/plugin-i18n": "4.5.3",
+		"@strapi/plugin-users-permissions": "4.5.3",
+		"@strapi/provider-upload-cloudinary": "^4.5.3",
+		"@strapi/strapi": "4.5.3",
+		"pg": "^8.7.3",
+		"sqlite3": "^5.1.1",
+		"strapi-plugin-import-export-entries": "^1.14.1"
+	},
+	"author": {
+		"name": "A Strapi developer"
+	},
+	"strapi": {
+		"uuid": "2c237bd8-4100-4018-b0a1-d1053dce112a"
+	},
+	"engines": {
+		"node": ">=14.x.x <=16.x.x",
+		"npm": ">=6.0.0"
+	},
+	"license": "MIT"
 }
