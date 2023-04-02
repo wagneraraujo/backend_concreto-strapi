@@ -33,12 +33,6 @@
     },
     "Url_verso_RGCNH": {
       "type": "string"
-    },
-    "Servicos_Relacionados": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::criar-servico.criar-servico",
-      "inversedBy": "colaboradors"
     }
   }
 }

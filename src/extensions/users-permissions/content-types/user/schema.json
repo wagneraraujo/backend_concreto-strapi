@@ -80,6 +80,11 @@
     },
     "Primeiro_Nome": {
       "type": "string"
+    },
+    "empresa": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empresa.empresa"
     }
   }
 }

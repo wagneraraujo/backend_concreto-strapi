@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias_de_servicos",
+  "info": {
+    "singularName": "categoria-de-servidos",
+    "pluralName": "categorias-de-servicos",
+    "displayName": "Categoria_Servicos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Nome"
+    },
+    "Icone": {
+      "type": "string",
+      "default": "file-cad-box"
+    },
+    "servicos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tipos-servico.tipos-servico",
+      "inversedBy": "categoria_servicos"
+    }
+  }
+}
